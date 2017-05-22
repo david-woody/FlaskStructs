@@ -13,7 +13,11 @@ class Config:
 
 
 class DevelopmentConfig(Config):
-    pass
+    MONGODB_SETTINGS = {
+        'db': 'local',
+        'host': 'localhost',
+        'port': 27017
+    }
 
 
 class ProductionConfig(Config):
