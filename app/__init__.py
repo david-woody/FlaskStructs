@@ -4,6 +4,7 @@ from flask_redis import FlaskRedis
 
 from config import config
 
+
 mongo = MongoEngine()
 redis_store = FlaskRedis()
 

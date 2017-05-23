@@ -1,12 +1,12 @@
 import os
 
+from flask_mongoengine import MongoEngine
 from flask_script import Manager, Shell
 
 from app import create_app
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
 manager = Manager(app)
-
 
 def make_shell_context():
     return dict(app=app)
